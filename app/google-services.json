@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "875441517932",
+    "firebase_url": "https://dypsoe-mock.firebaseio.com",
+    "project_id": "dypsoe-mock",
+    "storage_bucket": "dypsoe-mock.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:875441517932:android:4cf36bd417b8fcae542f49",
+        "android_client_info": {
+          "package_name": "com.google.firebase.codelab.friendlychat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "875441517932-e3vj1h0eb2qo98v5bi01k2j27gfebn5m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDeTl-VxqMQBBxt_rZyzgv_qM2npzWTa3o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "875441517932-e3vj1h0eb2qo98v5bi01k2j27gfebn5m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
