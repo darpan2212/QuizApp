@@ -20,7 +20,6 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
-import android.os.Message;
 import android.preference.PreferenceManager;
 import android.util.Log;
 import android.view.Menu;
@@ -41,8 +40,6 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
-//import com.google.android.gms.ads.AdRequest;
-//import com.google.android.gms.ads.AdView;
 import com.google.android.gms.appinvite.AppInviteInvitation;
 import com.google.android.gms.auth.api.Auth;
 import com.google.android.gms.common.ConnectionResult;
@@ -63,6 +60,9 @@ import java.util.LinkedList;
 import java.util.Map;
 
 import de.hdodenhof.circleimageview.CircleImageView;
+
+//import com.google.android.gms.ads.AdRequest;
+//import com.google.android.gms.ads.AdView;
 
 public class MainActivity extends AppCompatActivity implements
         GoogleApiClient.OnConnectionFailedListener {
@@ -168,11 +168,11 @@ public class MainActivity extends AppCompatActivity implements
                     alertDialog.setPositiveButton("Accept", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
-                            startActivity(new Intent(MainActivity.this, QuizActivity.class));
                             compRequest.setAccepted(1);
                             refToRequest.child("comp").child(mEmail.substring(0, mEmail.indexOf('@'))).setValue(compRequest);
                             refToRequest.child("comp").child(mEmail.substring(0, mEmail.indexOf('@'))).removeValue();
                             alertShown = false;
+                            startActivity(new Intent(MainActivity.this, QuizActivity.class));
                         }
                     });
                     alertDialog.setNegativeButton("cancel", new DialogInterface.OnClickListener() {
@@ -481,6 +481,7 @@ public class MainActivity extends AppCompatActivity implements
             }
         }
     }
+
 
 
     @Override
